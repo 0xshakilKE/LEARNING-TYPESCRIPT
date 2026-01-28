@@ -265,3 +265,6 @@ console.log(sayGreet("Malcolm X"))
 
 const summedEntries =(a : number , b: number) :any =>  a + b
 console.log(summedEntries(4, 7))
+
+const multipliedEntries=(a : number , b: number) : number => a * b
+console.log(multipliedEntries(9,8))

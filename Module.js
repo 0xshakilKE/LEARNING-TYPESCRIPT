@@ -192,5 +192,7 @@ console.log(registerStudent(false));
 //Arrow Functions
 var sayGreet = function (name) { return "Kindly, could you tell me what's your ".concat(name); };
 console.log(sayGreet("Malcolm X"));
-var summedEntries = function (a, b) { return "The summation is ".concat(a, " + ").concat(b); };
+var summedEntries = function (a, b) { return a + b; };
 console.log(summedEntries(4, 7));
+var multipliedEntries = function (a, b) { return a * b; };
+console.log(multipliedEntries(9, 8));
