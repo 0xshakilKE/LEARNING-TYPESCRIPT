@@ -196,3 +196,59 @@ var summedEntries = function (a, b) { return a + b; };
 console.log(summedEntries(4, 7));
 var multipliedEntries = function (a, b) { return a * b; };
 console.log(multipliedEntries(9, 8));
+//Object Oriented Programming-Comprises Majorly of Classes, Constructors and Properties
+var teddy = {
+    name: "Mr.Fluffy",
+    color: "Brown",
+    isHappy: true,
+    talk: function () {
+        console.log("Hi! I'm ".concat(this.name, ", Kindly hug Me"));
+    },
+    dance: function () {
+        console.log('Wiggle, Wiggle for me my dawg');
+    }
+};
+console.log(teddy.talk());
+//OOP-Using Class
+var Car = /** @class */ (function () {
+    function Car() {
+        this.color = '';
+        this.speed = 0;
+    }
+    Car.prototype.honk = function () {
+        console.log("Beep, Beep and I'm not repeating");
+    };
+    Car.prototype.goFast = function () {
+        console.log("I'mma gonna pass you at ".concat(this.speed, " km/h"));
+    };
+    return Car;
+}());
+var redCar = new Car();
+redCar.color = "red";
+redCar.speed = 120;
+console.log(redCar.honk());
+//Another Class
+var Puppy = /** @class */ (function () {
+    function Puppy() {
+        this.name = "";
+        this.age = 0;
+        this.isHappy = false;
+    }
+    Puppy.prototype.bark = function () {
+        console.log("".concat(this.name, " says Wooof Wooof"));
+    };
+    Puppy.prototype.wagTail = function () {
+        if (this.isHappy) {
+            console.log("".concat(this.name, "is wagging his tail happily"));
+        }
+        else {
+            console.log("".concat(this.name, " isn't wagging, I think he is sad"));
+        }
+    };
+    return Puppy;
+}());
+var max = new Puppy();
+max.name = "Maxwell Mkali";
+max.age = 2;
+max.bark();
+max.wagTail();

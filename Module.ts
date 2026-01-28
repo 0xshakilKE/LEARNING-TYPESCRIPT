@@ -268,3 +268,65 @@ console.log(summedEntries(4, 7))
 
 const multipliedEntries=(a : number , b: number) : number => a * b
 console.log(multipliedEntries(9,8))
+
+//Object Oriented Programming-Comprises Majorly of Classes, Constructors and Properties
+let teddy = {
+     name : "Mr.Fluffy",
+     color: "Brown",
+     isHappy: true,
+
+     talk(){
+        console.log (`Hi! I'm ${this.name}, Kindly hug Me`)
+     },
+
+     dance(){
+        console.log ('Wiggle, Wiggle for me my dawg')
+     }
+};
+
+console.log(teddy.talk())
+
+//OOP-Using Class
+
+class Car{
+    color: string = ''
+    speed: number = 0
+
+    honk(){
+        console.log("Beep, Beep and I'm not repeating")
+    }
+    goFast(){
+        console.log(`I'mma gonna pass you at ${this.speed} km/h`)
+    }
+}
+
+let redCar = new Car()
+redCar.color ="red"
+redCar.speed = 120
+
+console.log(redCar.honk())
+//Another Class
+
+class Puppy{
+    name : string= ""
+    age : number = 0
+    isHappy : boolean = false
+
+    bark(){
+        console.log(`${this.name} says Wooof Wooof`)
+    }
+
+    wagTail(){
+        if(this.isHappy){
+            console.log(`${this.name}is wagging his tail happily`)
+        } else{
+            console.log(`${this.name} isn't wagging, I think he is sad`)
+        }
+    }
+}
+
+let max = new Puppy()
+max.name = "Maxwell Mkali"
+max.age = 2
+max.bark()
+max.wagTail()
